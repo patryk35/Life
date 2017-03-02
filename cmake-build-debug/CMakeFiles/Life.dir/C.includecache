@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Patryk/CLionProjects/Life/gameOperator.c
+gameOperator.h
+C:/Users/Patryk/CLionProjects/Life/gameOperator.h
+gameSettings.h
+C:/Users/Patryk/CLionProjects/Life/gameSettings.h
+stdlib.h
+-
+stdio.h
+-
+
+C:/Users/Patryk/CLionProjects/Life/gameOperator.h
+gameSettings.h
+C:/Users/Patryk/CLionProjects/Life/gameSettings.h
+
+C:/Users/Patryk/CLionProjects/Life/gameSettings.c
+gameSettings.h
+C:/Users/Patryk/CLionProjects/Life/gameSettings.h
+stdio.h
+-
+
+C:/Users/Patryk/CLionProjects/Life/gameSettings.h
+
+C:/Users/Patryk/CLionProjects/Life/main.c
+stdio.h
+-
+stdio.h
+-
+gameSettings.h
+C:/Users/Patryk/CLionProjects/Life/gameSettings.h
+gameOperator.h
+C:/Users/Patryk/CLionProjects/Life/gameOperator.h
+
+C:/Users/Patryk/CLionProjects/Life/pngOperator.c
+pngOperator.h
+C:/Users/Patryk/CLionProjects/Life/pngOperator.h
+
+C:/Users/Patryk/CLionProjects/Life/pngOperator.h
+

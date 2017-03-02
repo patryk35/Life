@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Patryk/CLionProjects/Life/pngOperator.cpp
+pngOperator.h
+C:/Users/Patryk/CLionProjects/Life/pngOperator.h
+
+C:/Users/Patryk/CLionProjects/Life/pngOperator.h
+

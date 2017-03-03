@@ -7,6 +7,7 @@
 #include "boardGanerator.h"
 #include "fileRead.h"
 #include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
 /*
  * Error List
@@ -32,23 +33,13 @@ int startGame(gameBoard_t * gameBoard, gameSettings_t settings){
     }else{
         return -1;
     }
-
-    /*
-     *
-     *
-     * granice to 0,0 0,1 0,2 0,3 1,0 , itp, tu zrobic ich obsluge, pamietac ze zapisywac bez granic
-     *
-     */
-
 }
 
-int gameSimulation(gameBoard_t * gameBoard, gameSettings_t settings, int generationsCount){
+int gameSimulation(gameBoard_t * gameBoard, gameSettings_t settings, int generationsCount, char * boardName){
     int boardSize = gameBoard->boardSize;
-    printFile("", gameBoard); /*
- *
- *
- *
- */
+    char fileName[200];
+    findFileName(boardName,0,fileName);
+    printFile(fileName, gameBoard,settings.cellSize);
     for (int l =0;l < generationsCount; l++) {
         int **newFields;
         newFields = malloc(sizeof(newFields) * boardSize);
@@ -71,7 +62,8 @@ int gameSimulation(gameBoard_t * gameBoard, gameSettings_t settings, int generat
 
 
         gameBoard->fields=newFields; // usunac mallocowanie z tworzenia tego elementu
-        printFile("", gameBoard); // generowanie plików
+        findFileName(boardName,l+1,fileName);
+        printFile(fileName, gameBoard,settings.cellSize); // generowanie plików
 
     }
 }
@@ -107,4 +99,20 @@ int checkCellMooreNeighborhood(int ** fields, int x, int y){
 int checkCellVonNeumannNeighborhood(int ** fields, int x, int y){
     int aliveNeighbours = fields[x+1][y] + fields[x-1][y] + fields[x][y+1] + fields[x][y+1];
     return aliveNeighbours;
+}
+void findFileName(char* prefix, int counter, char  source[200]){
+    char fileName[200] = "";
+    char generation[4] ="000";
+    int i=0;
+    while(counter>0)
+    {
+        generation[2-i]=(counter%10)+48;
+        counter=counter/10;
+        i++;
+    }
+    strcpy(fileName,prefix);
+    strcat(fileName,"Genration_");
+    strcat(fileName,generation);
+    strcat(fileName,".png");
+    strcpy(source,fileName);
 }

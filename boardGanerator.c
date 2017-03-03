@@ -15,7 +15,7 @@ int boardGenerator(gameBoard_t * gameBoard, int edgeSettings) {
             gameBoard->fields[i][j]= rand()%2;
         }
     }
-    /*   for(int i=1;i<gameBoard->boardSize-1;i++){
+ /*      for(int i=1;i<gameBoard->boardSize-1;i++){
            for(int j=1;j<gameBoard->boardSize-1;j++){
                gameBoard->fields[i][j]=0;
            }
@@ -38,8 +38,8 @@ int boardGenerator(gameBoard_t * gameBoard, int edgeSettings) {
        gameBoard->fields[8][6]=1;
        gameBoard->fields[8][11]=1;
        gameBoard->fields[9][8]=1;
-       gameBoard->fields[9][9]=1;*/
-
+       gameBoard->fields[9][9]=1;
+*/
 
 }
 /*

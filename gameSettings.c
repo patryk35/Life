@@ -2,17 +2,17 @@
 // Created by Patryk on 2017-03-02.
 //
 #include "gameSettings.h"
-
 #include <stdio.h>
 int loadGameSettings(char * fileName, gameSettings_t * settings)
 {
     FILE * file = fopen(fileName,"r");
-    settings->countOfAdjacentCells= 8; // liczba sąsiednich komórek opcej: 4 lub 8
+    settings->countOfAdjacentCells= 4; // liczba sąsiednich komórek opcej: 4 lub 8
     settings->isBoardLoaded=0; // jeżeli 1 to mamy wczytać plik z planszą, jeżeli 0  to losujemy jakąś plansze o wymiarach z settings->deflautBoardSize;
     settings->deflautBoardSize=18;
-    settings->edgeSettings=2;
+    settings->edgeSettings=1;
+    settings->cellSize=16;
 
 
-    fclose(file);
+    //fclose(file);
     return 0;
 }

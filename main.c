@@ -3,9 +3,9 @@
 #include <stdio.h>
 int main() {
     int errorComand=0;
-    int generationsCount =20; //pobierac jakos inacej
+    int generationsCount =15; //pobierac jakos inacej
     char * settingsFile = "life.conf";// dodac wczytywanie z parametrami uruchomienia
-    char * boardName = "myLifeGamePlots"; // przenisesc do settings
+    char * boardName = "./LifePlots/Livell"; // przenisesc do settings
     gameSettings_t settings;
     errorComand = loadGameSettings(settingsFile,&settings);
     if(errorComand)
@@ -20,7 +20,7 @@ int main() {
 
     }
 
-    errorComand =  gameSimulation(&gameBoard, settings, generationsCount);
+    errorComand =  gameSimulation(&gameBoard, settings, generationsCount, boardName);
     if(errorComand)
     {
 

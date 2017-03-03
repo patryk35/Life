@@ -5,5 +5,5 @@
 #ifndef LIFE_PNGOPERATOR_H
 #define LIFE_PNGOPERATOR_H
 #include "gameOperator.h"
-int printFile(char * fileName, gameBoard_t * gameBoard);
+void printFile(char * fileName, gameBoard_t * gameBoard, int cellSize);
 #endif //LIFE_PNGOPERATOR_H

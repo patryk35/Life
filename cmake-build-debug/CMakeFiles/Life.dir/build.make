@@ -152,12 +152,62 @@ CMakeFiles/Life.dir/gameSettings.c.obj.provides: CMakeFiles/Life.dir/gameSetting
 CMakeFiles/Life.dir/gameSettings.c.obj.provides.build: CMakeFiles/Life.dir/gameSettings.c.obj
 
 
+CMakeFiles/Life.dir/boardGanerator.c.obj: CMakeFiles/Life.dir/flags.make
+CMakeFiles/Life.dir/boardGanerator.c.obj: ../boardGanerator.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Patryk\CLionProjects\Life\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Life.dir/boardGanerator.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Life.dir\boardGanerator.c.obj   -c C:\Users\Patryk\CLionProjects\Life\boardGanerator.c
+
+CMakeFiles/Life.dir/boardGanerator.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Life.dir/boardGanerator.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Patryk\CLionProjects\Life\boardGanerator.c > CMakeFiles\Life.dir\boardGanerator.c.i
+
+CMakeFiles/Life.dir/boardGanerator.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Life.dir/boardGanerator.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Patryk\CLionProjects\Life\boardGanerator.c -o CMakeFiles\Life.dir\boardGanerator.c.s
+
+CMakeFiles/Life.dir/boardGanerator.c.obj.requires:
+
+.PHONY : CMakeFiles/Life.dir/boardGanerator.c.obj.requires
+
+CMakeFiles/Life.dir/boardGanerator.c.obj.provides: CMakeFiles/Life.dir/boardGanerator.c.obj.requires
+	$(MAKE) -f CMakeFiles\Life.dir\build.make CMakeFiles/Life.dir/boardGanerator.c.obj.provides.build
+.PHONY : CMakeFiles/Life.dir/boardGanerator.c.obj.provides
+
+CMakeFiles/Life.dir/boardGanerator.c.obj.provides.build: CMakeFiles/Life.dir/boardGanerator.c.obj
+
+
+CMakeFiles/Life.dir/fileRead.c.obj: CMakeFiles/Life.dir/flags.make
+CMakeFiles/Life.dir/fileRead.c.obj: ../fileRead.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Patryk\CLionProjects\Life\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Life.dir/fileRead.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Life.dir\fileRead.c.obj   -c C:\Users\Patryk\CLionProjects\Life\fileRead.c
+
+CMakeFiles/Life.dir/fileRead.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Life.dir/fileRead.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Patryk\CLionProjects\Life\fileRead.c > CMakeFiles\Life.dir\fileRead.c.i
+
+CMakeFiles/Life.dir/fileRead.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Life.dir/fileRead.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Patryk\CLionProjects\Life\fileRead.c -o CMakeFiles\Life.dir\fileRead.c.s
+
+CMakeFiles/Life.dir/fileRead.c.obj.requires:
+
+.PHONY : CMakeFiles/Life.dir/fileRead.c.obj.requires
+
+CMakeFiles/Life.dir/fileRead.c.obj.provides: CMakeFiles/Life.dir/fileRead.c.obj.requires
+	$(MAKE) -f CMakeFiles\Life.dir\build.make CMakeFiles/Life.dir/fileRead.c.obj.provides.build
+.PHONY : CMakeFiles/Life.dir/fileRead.c.obj.provides
+
+CMakeFiles/Life.dir/fileRead.c.obj.provides.build: CMakeFiles/Life.dir/fileRead.c.obj
+
+
 # Object files for target Life
 Life_OBJECTS = \
 "CMakeFiles/Life.dir/main.c.obj" \
 "CMakeFiles/Life.dir/pngOperator.c.obj" \
 "CMakeFiles/Life.dir/gameOperator.c.obj" \
-"CMakeFiles/Life.dir/gameSettings.c.obj"
+"CMakeFiles/Life.dir/gameSettings.c.obj" \
+"CMakeFiles/Life.dir/boardGanerator.c.obj" \
+"CMakeFiles/Life.dir/fileRead.c.obj"
 
 # External object files for target Life
 Life_EXTERNAL_OBJECTS =
@@ -166,11 +216,13 @@ Life.exe: CMakeFiles/Life.dir/main.c.obj
 Life.exe: CMakeFiles/Life.dir/pngOperator.c.obj
 Life.exe: CMakeFiles/Life.dir/gameOperator.c.obj
 Life.exe: CMakeFiles/Life.dir/gameSettings.c.obj
+Life.exe: CMakeFiles/Life.dir/boardGanerator.c.obj
+Life.exe: CMakeFiles/Life.dir/fileRead.c.obj
 Life.exe: CMakeFiles/Life.dir/build.make
 Life.exe: CMakeFiles/Life.dir/linklibs.rsp
 Life.exe: CMakeFiles/Life.dir/objects1.rsp
 Life.exe: CMakeFiles/Life.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Patryk\CLionProjects\Life\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable Life.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Patryk\CLionProjects\Life\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable Life.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Life.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -182,6 +234,8 @@ CMakeFiles/Life.dir/requires: CMakeFiles/Life.dir/main.c.obj.requires
 CMakeFiles/Life.dir/requires: CMakeFiles/Life.dir/pngOperator.c.obj.requires
 CMakeFiles/Life.dir/requires: CMakeFiles/Life.dir/gameOperator.c.obj.requires
 CMakeFiles/Life.dir/requires: CMakeFiles/Life.dir/gameSettings.c.obj.requires
+CMakeFiles/Life.dir/requires: CMakeFiles/Life.dir/boardGanerator.c.obj.requires
+CMakeFiles/Life.dir/requires: CMakeFiles/Life.dir/fileRead.c.obj.requires
 
 .PHONY : CMakeFiles/Life.dir/requires
 

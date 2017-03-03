@@ -5,12 +5,10 @@
 #ifndef LIFE_GAMESETTINGS_H
 #define LIFE_GAMESETTINGS_H
 typedef struct gameSettings{
-    /*int size;
-    int height;
-    int width;*/
+    int deflautBoardSize;
     int countOfAdjacentCells;
     int edgeSettings;
-    int boardStart;
+    int isBoardLoaded;
 } gameSettings_t;
 
 int loadGameSettings(char * fileName, gameSettings_t * settings);

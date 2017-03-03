@@ -122,6 +122,60 @@ Life/fast:
 	$(MAKE) -f CMakeFiles\Life.dir\build.make CMakeFiles/Life.dir/build
 .PHONY : Life/fast
 
+boardGanerator.obj: boardGanerator.c.obj
+
+.PHONY : boardGanerator.obj
+
+# target to build an object file
+boardGanerator.c.obj:
+	$(MAKE) -f CMakeFiles\Life.dir\build.make CMakeFiles/Life.dir/boardGanerator.c.obj
+.PHONY : boardGanerator.c.obj
+
+boardGanerator.i: boardGanerator.c.i
+
+.PHONY : boardGanerator.i
+
+# target to preprocess a source file
+boardGanerator.c.i:
+	$(MAKE) -f CMakeFiles\Life.dir\build.make CMakeFiles/Life.dir/boardGanerator.c.i
+.PHONY : boardGanerator.c.i
+
+boardGanerator.s: boardGanerator.c.s
+
+.PHONY : boardGanerator.s
+
+# target to generate assembly for a file
+boardGanerator.c.s:
+	$(MAKE) -f CMakeFiles\Life.dir\build.make CMakeFiles/Life.dir/boardGanerator.c.s
+.PHONY : boardGanerator.c.s
+
+fileRead.obj: fileRead.c.obj
+
+.PHONY : fileRead.obj
+
+# target to build an object file
+fileRead.c.obj:
+	$(MAKE) -f CMakeFiles\Life.dir\build.make CMakeFiles/Life.dir/fileRead.c.obj
+.PHONY : fileRead.c.obj
+
+fileRead.i: fileRead.c.i
+
+.PHONY : fileRead.i
+
+# target to preprocess a source file
+fileRead.c.i:
+	$(MAKE) -f CMakeFiles\Life.dir\build.make CMakeFiles/Life.dir/fileRead.c.i
+.PHONY : fileRead.c.i
+
+fileRead.s: fileRead.c.s
+
+.PHONY : fileRead.s
+
+# target to generate assembly for a file
+fileRead.c.s:
+	$(MAKE) -f CMakeFiles\Life.dir\build.make CMakeFiles/Life.dir/fileRead.c.s
+.PHONY : fileRead.c.s
+
 gameOperator.obj: gameOperator.c.obj
 
 .PHONY : gameOperator.obj
@@ -239,6 +293,12 @@ help:
 	@echo ... Life
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... boardGanerator.obj
+	@echo ... boardGanerator.i
+	@echo ... boardGanerator.s
+	@echo ... fileRead.obj
+	@echo ... fileRead.i
+	@echo ... fileRead.s
 	@echo ... gameOperator.obj
 	@echo ... gameOperator.i
 	@echo ... gameOperator.s

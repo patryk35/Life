@@ -80,6 +80,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Patryk/CLionProjects/Life/boardGanerator.c">
+			<Option target="Life"/>
+		</Unit>
+		<Unit filename="C:/Users/Patryk/CLionProjects/Life/boardGanerator.h">
+			<Option target="Life"/>
+		</Unit>
+		<Unit filename="C:/Users/Patryk/CLionProjects/Life/fileRead.c">
+			<Option target="Life"/>
+		</Unit>
+		<Unit filename="C:/Users/Patryk/CLionProjects/Life/fileRead.h">
+			<Option target="Life"/>
+		</Unit>
 		<Unit filename="C:/Users/Patryk/CLionProjects/Life/gameOperator.c">
 			<Option target="Life"/>
 		</Unit>

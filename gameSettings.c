@@ -7,20 +7,12 @@
 int loadGameSettings(char * fileName, gameSettings_t * settings)
 {
     FILE * file = fopen(fileName,"r");
-    settings->countOfAdjacentCells= 8;
-    settings->boardStart=1;
+    settings->countOfAdjacentCells= 4; // liczba sąsiednich komórek opcej: 4 lub 8
+    settings->isBoardLoaded=0; // jeżeli 1 to mamy wczytać plik z planszą, jeżeli 0  to losujemy jakąś plansze o wymiarach z settings->deflautBoardSize;
+    settings->deflautBoardSize=10;
     settings->edgeSettings=1;
 
 
-/* boarderStart 1- for new, 2 - for load
- * if()
-    {
-
-    }else if(){
-
-    }else{
-
-    }*/
     fclose(file);
     return 0;
 }

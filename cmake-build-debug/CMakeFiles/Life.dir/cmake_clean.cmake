@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Life.dir/pngOperator.c.obj"
   "CMakeFiles/Life.dir/gameOperator.c.obj"
   "CMakeFiles/Life.dir/gameSettings.c.obj"
+  "CMakeFiles/Life.dir/boardGanerator.c.obj"
+  "CMakeFiles/Life.dir/fileRead.c.obj"
   "Life.pdb"
   "Life.exe"
   "Life.exe.manifest"

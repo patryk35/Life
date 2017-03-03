@@ -14,8 +14,6 @@
     <list default="true" id="57c0a3a2-61c2-412e-aef8-feee8173b790" name="Default" comment="Writing funcktion, which read file and save values in structers">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Life.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Life.dir/depend.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gameSettings.c" afterPath="$PROJECT_DIR$/gameSettings.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gameSettings.h" afterPath="$PROJECT_DIR$/gameSettings.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -418,7 +416,7 @@
       <workItem from="1488467315398" duration="16226000" />
       <workItem from="1488551266875" duration="976000" />
       <workItem from="1488553058811" duration="3649000" />
-      <workItem from="1488557560998" duration="10853000" />
+      <workItem from="1488557560998" duration="11574000" />
     </task>
     <task id="LOCAL-00001" summary="Sprawdzenie">
       <created>1488557694415</created>
@@ -441,11 +439,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488557956337</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Writing funcktion, which read file and save values in structers">
+      <created>1488568673714</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1488568673714</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31704000" />
+    <option name="totallyTimeSpent" value="32425000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="281" y="113" width="1616" height="876" extended-state="0" />

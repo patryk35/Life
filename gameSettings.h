@@ -9,6 +9,7 @@ typedef struct gameSettings{
     int countOfAdjacentCells;
     int edgeSettings;
     int isBoardLoaded;
+    int generationCount;
 } gameSettings_t;
 
 int loadGameSettings(char * fileName, gameSettings_t * settings);

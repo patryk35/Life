@@ -4,7 +4,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define BufferSize 1024
+#define BufferSize 512
 
 int loadGameSettings(char * fileName, gameSettings_t * settings)
 {

@@ -53,14 +53,12 @@ stdio.h
 C:/Users/Patryk/CLionProjects/Life/gameSettings.h
 
 C:/Users/Patryk/CLionProjects/Life/main.c
-stdio.h
--
-stdio.h
--
 gameSettings.h
 C:/Users/Patryk/CLionProjects/Life/gameSettings.h
 gameOperator.h
 C:/Users/Patryk/CLionProjects/Life/gameOperator.h
+stdio.h
+-
 
 C:/Users/Patryk/CLionProjects/Life/pngOperator.c
 pngOperator.h

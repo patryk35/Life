@@ -1,13 +1,11 @@
-#include <stdio.h>
-
-#include <stdio.h>
 #include "gameSettings.h"
 #include "gameOperator.h"
+#include <stdio.h>
 int main() {
     int errorComand=0;
-    int generationsCount =10; //pobierac jakos inacej
+    int generationsCount =20; //pobierac jakos inacej
     char * settingsFile = "life.conf";// dodac wczytywanie z parametrami uruchomienia
-    char * boardName = "png.png";
+    char * boardName = "myLifeGamePlots"; // przenisesc do settings
     gameSettings_t settings;
     errorComand = loadGameSettings(settingsFile,&settings);
     if(errorComand)
@@ -16,13 +14,13 @@ int main() {
     }
     gameBoard_t gameBoard;
     gameBoard.boardSize=settings.deflautBoardSize;
-    errorComand = startGame(&gameBoard, settings.isBoardLoaded);
+    errorComand = startGame(&gameBoard, settings);
     if(errorComand)
     {
 
     }
 
-    errorComand =  gameSimulation(&gameBoard, settings.countOfAdjacentCells, generationsCount);
+    errorComand =  gameSimulation(&gameBoard, settings, generationsCount);
     if(errorComand)
     {
 

@@ -68,6 +68,11 @@ int loadGameSettings(char * fileName, gameSettings_t * settings)
             counterofcalling++;
         }
 
+        if(strcmp(tmpFirstString,"boardName")==0){
+            settings->boardName = tmpSecondString;
+            counterofcalling++;
+        }
+
         int c;
         while((c=fgetc(file))!='\n' && c!=EOF);
         if(c==EOF) break;

@@ -4,7 +4,7 @@
 
 #ifndef LIFE_FILEREAD_H
 #define LIFE_FILEREAD_H
-
-int readFile(char * fileName);
+#include "gameOperator.h"
+int readFile(char * fileName, gameBoard_t *readBoard);
 
 #endif //LIFE_FILEREAD_H

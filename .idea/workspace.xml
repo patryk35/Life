@@ -492,7 +492,7 @@
       <workItem from="1488791342699" duration="10349000" />
       <workItem from="1488813336001" duration="2061000" />
       <workItem from="1488815776342" duration="184000" />
-      <workItem from="1488815987116" duration="1662000" />
+      <workItem from="1488815987116" duration="1668000" />
     </task>
     <task id="LOCAL-00001" summary="v 1.1.1&#10;">
       <created>1488556724239</created>
@@ -557,11 +557,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488825219605</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Sprawo v.1&#10;">
+      <created>1488825225945</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1488825225945</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87574000" />
+    <option name="totallyTimeSpent" value="87580000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />

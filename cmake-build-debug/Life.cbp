@@ -8,116 +8,114 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/orion/CLionProjects/Life/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/orion/CLionProjects/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/orion/CLionProjects/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/orion/CLionProjects/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/orion/CLionProjects/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/home/orion/CLionProjects/Life/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/orion/CLionProjects/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/orion/CLionProjects/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/orion/CLionProjects/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/orion/CLionProjects/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/orion/CLionProjects/Life/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/orion/CLionProjects/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/orion/CLionProjects/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/orion/CLionProjects/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/orion/CLionProjects/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Life">
-				<Option output="/home/orion/CLionProjects/Life/cmake-build-debug/Life" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/orion/CLionProjects/Life/cmake-build-debug"/>
+				<Option output="C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/Life.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/../../../../mingw32/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/orion/CLionProjects/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 Life"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/orion/CLionProjects/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/orion/CLionProjects/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/orion/CLionProjects/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 Life"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Life/fast">
-				<Option output="/home/orion/CLionProjects/Life/cmake-build-debug/Life" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/orion/CLionProjects/Life/cmake-build-debug"/>
+				<Option output="C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/Life.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/../../../../mingw32/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/orion/CLionProjects/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 Life/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/orion/CLionProjects/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/orion/CLionProjects/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/orion/CLionProjects/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 Life/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/orion/CLionProjects/Life/boardGanerator.c">
+		<Unit filename="C:/Users/Patryk/Desktop/Life/Life/boardGenerator.c">
 			<Option target="Life"/>
 		</Unit>
-		<Unit filename="/home/orion/CLionProjects/Life/boardGanerator.h">
+		<Unit filename="C:/Users/Patryk/Desktop/Life/Life/boardGenerator.h">
 			<Option target="Life"/>
 		</Unit>
-		<Unit filename="/home/orion/CLionProjects/Life/fileRead.c">
+		<Unit filename="C:/Users/Patryk/Desktop/Life/Life/fileOperator.c">
 			<Option target="Life"/>
 		</Unit>
-		<Unit filename="/home/orion/CLionProjects/Life/fileRead.h">
+		<Unit filename="C:/Users/Patryk/Desktop/Life/Life/fileOperator.h">
 			<Option target="Life"/>
 		</Unit>
-		<Unit filename="/home/orion/CLionProjects/Life/gameOperator.c">
+		<Unit filename="C:/Users/Patryk/Desktop/Life/Life/gameOperator.c">
 			<Option target="Life"/>
 		</Unit>
-		<Unit filename="/home/orion/CLionProjects/Life/gameOperator.h">
+		<Unit filename="C:/Users/Patryk/Desktop/Life/Life/gameOperator.h">
 			<Option target="Life"/>
 		</Unit>
-		<Unit filename="/home/orion/CLionProjects/Life/gameSettings.c">
+		<Unit filename="C:/Users/Patryk/Desktop/Life/Life/gameSettings.c">
 			<Option target="Life"/>
 		</Unit>
-		<Unit filename="/home/orion/CLionProjects/Life/gameSettings.h">
+		<Unit filename="C:/Users/Patryk/Desktop/Life/Life/gameSettings.h">
 			<Option target="Life"/>
 		</Unit>
-		<Unit filename="/home/orion/CLionProjects/Life/main.c">
+		<Unit filename="C:/Users/Patryk/Desktop/Life/Life/main.c">
 			<Option target="Life"/>
 		</Unit>
-		<Unit filename="/home/orion/CLionProjects/Life/pngOperator.c">
+		<Unit filename="C:/Users/Patryk/Desktop/Life/Life/pngOperator.c">
 			<Option target="Life"/>
 		</Unit>
-		<Unit filename="/home/orion/CLionProjects/Life/pngOperator.h">
+		<Unit filename="C:/Users/Patryk/Desktop/Life/Life/pngOperator.h">
 			<Option target="Life"/>
 		</Unit>
-		<Unit filename="/home/orion/CLionProjects/Life/CMakeLists.txt">
+		<Unit filename="C:/Users/Patryk/Desktop/Life/Life/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

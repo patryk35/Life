@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/orion/CLionProjects/Life/boardGanerator.c" "/home/orion/CLionProjects/Life/cmake-build-debug/CMakeFiles/Life.dir/boardGanerator.c.o"
-  "/home/orion/CLionProjects/Life/fileRead.c" "/home/orion/CLionProjects/Life/cmake-build-debug/CMakeFiles/Life.dir/fileRead.c.o"
-  "/home/orion/CLionProjects/Life/gameOperator.c" "/home/orion/CLionProjects/Life/cmake-build-debug/CMakeFiles/Life.dir/gameOperator.c.o"
-  "/home/orion/CLionProjects/Life/gameSettings.c" "/home/orion/CLionProjects/Life/cmake-build-debug/CMakeFiles/Life.dir/gameSettings.c.o"
-  "/home/orion/CLionProjects/Life/main.c" "/home/orion/CLionProjects/Life/cmake-build-debug/CMakeFiles/Life.dir/main.c.o"
-  "/home/orion/CLionProjects/Life/pngOperator.c" "/home/orion/CLionProjects/Life/cmake-build-debug/CMakeFiles/Life.dir/pngOperator.c.o"
+  "C:/Users/Patryk/Desktop/Life/Life/boardGenerator.c" "C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/CMakeFiles/Life.dir/boardGenerator.c.obj"
+  "C:/Users/Patryk/Desktop/Life/Life/fileOperator.c" "C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/CMakeFiles/Life.dir/fileOperator.c.obj"
+  "C:/Users/Patryk/Desktop/Life/Life/gameOperator.c" "C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/CMakeFiles/Life.dir/gameOperator.c.obj"
+  "C:/Users/Patryk/Desktop/Life/Life/gameSettings.c" "C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/CMakeFiles/Life.dir/gameSettings.c.obj"
+  "C:/Users/Patryk/Desktop/Life/Life/main.c" "C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/CMakeFiles/Life.dir/main.c.obj"
+  "C:/Users/Patryk/Desktop/Life/Life/pngOperator.c" "C:/Users/Patryk/Desktop/Life/Life/cmake-build-debug/CMakeFiles/Life.dir/pngOperator.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

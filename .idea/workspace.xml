@@ -11,7 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57c0a3a2-61c2-412e-aef8-feee8173b790" name="Default" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;cmake-build-debug/CMakeCache.txt&#10;#&#9;cmake-build-debug/CMakeFiles/3.6.3/CMakeCCompiler.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/3.6.3/CMakeCXXCompiler.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/3.6.3/CMakeDetermineCompilerABI_C.bin&#10;#&#9;cmake-build-debug/CMakeFiles/3.6.3/CMakeDetermineCompilerABI_CXX.bin&#10;#&#9;cmake-build-debug/CMakeFiles/3.6.3/CMakeSystem.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/CMakeOutput.log&#10;#&#9;cmake-build-debug/CMakeFiles/Life.dir/DependInfo.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/Life.dir/build.make&#10;#&#9;cmake-build-debug/CMakeFiles/Life.dir/depend.internal&#10;#&#9;cmake-build-debug/CMakeFiles/Life.dir/link.txt&#10;#&#9;cmake-build-debug/CMakeFiles/Makefile.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/Makefile2&#10;#&#9;cmake-build-debug/CMakeFiles/TargetDirectories.txt&#10;#&#9;cmake-build-debug/CMakeFiles/clion-environment.txt&#10;#&#9;cmake-build-debug/CMakeFiles/clion-log.txt&#10;#&#9;cmake-build-debug/CMakeFiles/feature_tests.bin&#10;#&#9;cmake-build-debug/Life.cbp&#10;#&#9;cmake-build-debug/Makefile&#10;#&#9;cmake-build-debug/cmake_install.cmake&#10;#&#9;gameSettings.c&#10;#&#9;gameSettings.h&#10;">
+    <list default="true" id="57c0a3a2-61c2-412e-aef8-feee8173b790" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
@@ -492,7 +492,7 @@
       <workItem from="1488791342699" duration="10349000" />
       <workItem from="1488813336001" duration="2061000" />
       <workItem from="1488815776342" duration="184000" />
-      <workItem from="1488815987116" duration="1640000" />
+      <workItem from="1488815987116" duration="1662000" />
     </task>
     <task id="LOCAL-00001" summary="v 1.1.1&#10;">
       <created>1488556724239</created>
@@ -550,11 +550,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488816901839</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Sprawo v.1&#10;">
+      <created>1488825219605</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1488825219605</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87552000" />
+    <option name="totallyTimeSpent" value="87574000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
@@ -595,7 +602,8 @@
     <MESSAGE value="v1.2.3 - Przygotowane do zal. bibl. graf.&#10;" />
     <MESSAGE value="v.2.0.0 Biblioteka graficzna&#10;" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;cmake-build-debug/CMakeCache.txt&#10;#&#9;cmake-build-debug/CMakeFiles/3.6.3/CMakeCCompiler.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/3.6.3/CMakeCXXCompiler.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/3.6.3/CMakeDetermineCompilerABI_C.bin&#10;#&#9;cmake-build-debug/CMakeFiles/3.6.3/CMakeDetermineCompilerABI_CXX.bin&#10;#&#9;cmake-build-debug/CMakeFiles/3.6.3/CMakeSystem.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/CMakeOutput.log&#10;#&#9;cmake-build-debug/CMakeFiles/Life.dir/DependInfo.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/Life.dir/build.make&#10;#&#9;cmake-build-debug/CMakeFiles/Life.dir/depend.internal&#10;#&#9;cmake-build-debug/CMakeFiles/Life.dir/link.txt&#10;#&#9;cmake-build-debug/CMakeFiles/Makefile.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/Makefile2&#10;#&#9;cmake-build-debug/CMakeFiles/TargetDirectories.txt&#10;#&#9;cmake-build-debug/CMakeFiles/clion-environment.txt&#10;#&#9;cmake-build-debug/CMakeFiles/clion-log.txt&#10;#&#9;cmake-build-debug/CMakeFiles/feature_tests.bin&#10;#&#9;cmake-build-debug/Life.cbp&#10;#&#9;cmake-build-debug/Makefile&#10;#&#9;cmake-build-debug/cmake_install.cmake&#10;#&#9;gameSettings.c&#10;#&#9;gameSettings.h&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;cmake-build-debug/CMakeCache.txt&#10;#&#9;cmake-build-debug/CMakeFiles/3.6.3/CMakeCCompiler.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/3.6.3/CMakeCXXCompiler.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/3.6.3/CMakeDetermineCompilerABI_C.bin&#10;#&#9;cmake-build-debug/CMakeFiles/3.6.3/CMakeDetermineCompilerABI_CXX.bin&#10;#&#9;cmake-build-debug/CMakeFiles/3.6.3/CMakeSystem.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/CMakeOutput.log&#10;#&#9;cmake-build-debug/CMakeFiles/Life.dir/DependInfo.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/Life.dir/build.make&#10;#&#9;cmake-build-debug/CMakeFiles/Life.dir/depend.internal&#10;#&#9;cmake-build-debug/CMakeFiles/Life.dir/link.txt&#10;#&#9;cmake-build-debug/CMakeFiles/Makefile.cmake&#10;#&#9;cmake-build-debug/CMakeFiles/Makefile2&#10;#&#9;cmake-build-debug/CMakeFiles/TargetDirectories.txt&#10;#&#9;cmake-build-debug/CMakeFiles/clion-environment.txt&#10;#&#9;cmake-build-debug/CMakeFiles/clion-log.txt&#10;#&#9;cmake-build-debug/CMakeFiles/feature_tests.bin&#10;#&#9;cmake-build-debug/Life.cbp&#10;#&#9;cmake-build-debug/Makefile&#10;#&#9;cmake-build-debug/cmake_install.cmake&#10;#&#9;gameSettings.c&#10;#&#9;gameSettings.h&#10;" />
+    <MESSAGE value="Sprawo v.1&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sprawo v.1&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

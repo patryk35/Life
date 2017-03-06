@@ -1,7 +1,11 @@
 #include "fileOperator.h"
 #include "boardGenerator.h"
 #include <stdio.h>
-#include <windows.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <unistd.h>
 int readFile(char * fileName, gameBoard_t * gameBoard, int edgeSettings){
     FILE * file = fopen(fileName,"r");
     if(file == NULL)
@@ -57,5 +61,8 @@ int writeFile(char * saveName, gameBoard_t * gameBoard){
     return 0;
 }
 void newDirectory(char * name){
-    CreateDirectory(TEXT(name), NULL);
+    struct stat st = {0};
+if (stat(name, &st) == -1) {
+    mkdir(name, 0700);
+}
 }

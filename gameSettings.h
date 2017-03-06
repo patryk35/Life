@@ -5,6 +5,7 @@
 #ifndef LIFE_GAMESETTINGS_H
 #define LIFE_GAMESETTINGS_H
 typedef struct gameSettings{
+    char *boardName;
     int deflautBoardSize;
     int countOfAdjacentCells;
     int edgeSettings;

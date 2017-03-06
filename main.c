@@ -55,7 +55,7 @@ int main(int argc, char ** argv) {
         fprintf( stderr, usage);
         exit( EXIT_FAILURE );
     }
-    else if(argc < 3) {
+    else if(argc < 3 || saveName == "") {
         fprintf( stderr, "\nWrong count of parameters! \n" );
         fprintf( stderr, usage);
         exit( EXIT_FAILURE );

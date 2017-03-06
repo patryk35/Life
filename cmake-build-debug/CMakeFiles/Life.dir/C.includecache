@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/orion/CLionProjects/Life/boardGanerator.c
-boardGanerator.h
-/home/orion/CLionProjects/Life/boardGanerator.h
+C:/Users/Patryk/Desktop/Life/Life/boardGenerator.c
+boardGenerator.h
+C:/Users/Patryk/Desktop/Life/Life/boardGenerator.h
 stdlib.h
 -
 time.h
@@ -16,25 +16,33 @@ time.h
 stdio.h
 -
 
-/home/orion/CLionProjects/Life/boardGanerator.h
+C:/Users/Patryk/Desktop/Life/Life/boardGenerator.h
 gameOperator.h
-/home/orion/CLionProjects/Life/gameOperator.h
+C:/Users/Patryk/Desktop/Life/Life/gameOperator.h
 
-/home/orion/CLionProjects/Life/fileRead.c
-fileRead.h
-/home/orion/CLionProjects/Life/fileRead.h
+C:/Users/Patryk/Desktop/Life/Life/fileOperator.c
+fileOperator.h
+C:/Users/Patryk/Desktop/Life/Life/fileOperator.h
+boardGenerator.h
+C:/Users/Patryk/Desktop/Life/Life/boardGenerator.h
+stdio.h
+-
+windows.h
+-
 
-/home/orion/CLionProjects/Life/fileRead.h
-
-/home/orion/CLionProjects/Life/gameOperator.c
+C:/Users/Patryk/Desktop/Life/Life/fileOperator.h
 gameOperator.h
-/home/orion/CLionProjects/Life/gameOperator.h
+C:/Users/Patryk/Desktop/Life/Life/gameOperator.h
+
+C:/Users/Patryk/Desktop/Life/Life/gameOperator.c
+gameOperator.h
+C:/Users/Patryk/Desktop/Life/Life/gameOperator.h
 pngOperator.h
-/home/orion/CLionProjects/Life/pngOperator.h
-boardGanerator.h
-/home/orion/CLionProjects/Life/boardGanerator.h
-fileRead.h
-/home/orion/CLionProjects/Life/fileRead.h
+C:/Users/Patryk/Desktop/Life/Life/pngOperator.h
+boardGenerator.h
+C:/Users/Patryk/Desktop/Life/Life/boardGenerator.h
+fileOperator.h
+C:/Users/Patryk/Desktop/Life/Life/fileOperator.h
 stdlib.h
 -
 string.h
@@ -42,47 +50,47 @@ string.h
 stdio.h
 -
 
-/home/orion/CLionProjects/Life/gameOperator.h
+C:/Users/Patryk/Desktop/Life/Life/gameOperator.h
 gameSettings.h
-/home/orion/CLionProjects/Life/gameSettings.h
+C:/Users/Patryk/Desktop/Life/Life/gameSettings.h
 
-/home/orion/CLionProjects/Life/gameSettings.c
+C:/Users/Patryk/Desktop/Life/Life/gameSettings.c
 gameSettings.h
-/home/orion/CLionProjects/Life/gameSettings.h
+C:/Users/Patryk/Desktop/Life/Life/gameSettings.h
 stdio.h
 -
+string.h
+-
+stdlib.h
+-
 
-/home/orion/CLionProjects/Life/gameSettings.h
+C:/Users/Patryk/Desktop/Life/Life/gameSettings.h
 
-/home/orion/CLionProjects/Life/main.c
+C:/Users/Patryk/Desktop/Life/Life/main.c
 gameSettings.h
-/home/orion/CLionProjects/Life/gameSettings.h
+C:/Users/Patryk/Desktop/Life/Life/gameSettings.h
 gameOperator.h
-/home/orion/CLionProjects/Life/gameOperator.h
+C:/Users/Patryk/Desktop/Life/Life/gameOperator.h
+getopt.h
+-
 stdio.h
+-
+stdlib.h
 -
 
-/home/orion/CLionProjects/Life/pngOperator.c
-pngOperator.h
-/home/orion/CLionProjects/Life/pngOperator.h
+C:/Users/Patryk/Desktop/Life/Life/pngOperator.c
 gameOperator.h
-/home/orion/CLionProjects/Life/gameOperator.h
-stdio.h
--
+C:/Users/Patryk/Desktop/Life/Life/gameOperator.h
 unistd.h
 -
 stdlib.h
 -
 stdio.h
 -
-math.h
--
 png.h
 -
-gameOperator.h
-/home/orion/CLionProjects/Life/gameOperator.h
 
-/home/orion/CLionProjects/Life/pngOperator.h
+C:/Users/Patryk/Desktop/Life/Life/pngOperator.h
 gameOperator.h
-/home/orion/CLionProjects/Life/gameOperator.h
+C:/Users/Patryk/Desktop/Life/Life/gameOperator.h
 

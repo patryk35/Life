@@ -1,12 +1,14 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Life.dir/main.c.o"
-  "CMakeFiles/Life.dir/pngOperator.c.o"
-  "CMakeFiles/Life.dir/gameOperator.c.o"
-  "CMakeFiles/Life.dir/gameSettings.c.o"
-  "CMakeFiles/Life.dir/boardGanerator.c.o"
-  "CMakeFiles/Life.dir/fileRead.c.o"
+  "CMakeFiles/Life.dir/main.c.obj"
+  "CMakeFiles/Life.dir/pngOperator.c.obj"
+  "CMakeFiles/Life.dir/gameOperator.c.obj"
+  "CMakeFiles/Life.dir/gameSettings.c.obj"
+  "CMakeFiles/Life.dir/boardGenerator.c.obj"
+  "CMakeFiles/Life.dir/fileOperator.c.obj"
   "Life.pdb"
-  "Life"
+  "Life.exe"
+  "Life.exe.manifest"
+  "libLife.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

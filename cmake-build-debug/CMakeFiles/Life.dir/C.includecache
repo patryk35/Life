@@ -9,33 +9,33 @@
 /home/orion/Pobrane/Life for Ubuntu/Life/boardGenerator.c
 boardGenerator.h
 /home/orion/Pobrane/Life for Ubuntu/Life/boardGenerator.h
+errorsComunicats.h
+/home/orion/Pobrane/Life for Ubuntu/Life/errorsComunicats.h
 stdlib.h
 -
 time.h
--
-stdio.h
 -
 
 /home/orion/Pobrane/Life for Ubuntu/Life/boardGenerator.h
 gameOperator.h
 /home/orion/Pobrane/Life for Ubuntu/Life/gameOperator.h
 
+/home/orion/Pobrane/Life for Ubuntu/Life/errorsComunicats.h
+
 /home/orion/Pobrane/Life for Ubuntu/Life/fileOperator.c
 fileOperator.h
 /home/orion/Pobrane/Life for Ubuntu/Life/fileOperator.h
 boardGenerator.h
 /home/orion/Pobrane/Life for Ubuntu/Life/boardGenerator.h
+errorsComunicats.h
+/home/orion/Pobrane/Life for Ubuntu/Life/errorsComunicats.h
 stdio.h
 -
 stdlib.h
 -
 string.h
 -
-sys/types.h
--
 sys/stat.h
--
-unistd.h
 -
 
 /home/orion/Pobrane/Life for Ubuntu/Life/fileOperator.h
@@ -45,6 +45,8 @@ gameOperator.h
 /home/orion/Pobrane/Life for Ubuntu/Life/gameOperator.c
 gameOperator.h
 /home/orion/Pobrane/Life for Ubuntu/Life/gameOperator.h
+errorsComunicats.h
+/home/orion/Pobrane/Life for Ubuntu/Life/errorsComunicats.h
 pngOperator.h
 /home/orion/Pobrane/Life for Ubuntu/Life/pngOperator.h
 boardGenerator.h
@@ -65,6 +67,8 @@ gameSettings.h
 /home/orion/Pobrane/Life for Ubuntu/Life/gameSettings.c
 gameSettings.h
 /home/orion/Pobrane/Life for Ubuntu/Life/gameSettings.h
+errorsComunicats.h
+/home/orion/Pobrane/Life for Ubuntu/Life/errorsComunicats.h
 stdio.h
 -
 string.h
@@ -77,6 +81,8 @@ stdlib.h
 /home/orion/Pobrane/Life for Ubuntu/Life/main.c
 gameSettings.h
 /home/orion/Pobrane/Life for Ubuntu/Life/gameSettings.h
+errorsComunicats.h
+/home/orion/Pobrane/Life for Ubuntu/Life/errorsComunicats.h
 gameOperator.h
 /home/orion/Pobrane/Life for Ubuntu/Life/gameOperator.h
 getopt.h
@@ -89,6 +95,8 @@ stdlib.h
 /home/orion/Pobrane/Life for Ubuntu/Life/pngOperator.c
 gameOperator.h
 /home/orion/Pobrane/Life for Ubuntu/Life/gameOperator.h
+errorsComunicats.h
+/home/orion/Pobrane/Life for Ubuntu/Life/errorsComunicats.h
 unistd.h
 -
 stdlib.h

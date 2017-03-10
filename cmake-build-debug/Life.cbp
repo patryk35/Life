@@ -90,6 +90,9 @@
 		<Unit filename="/home/orion/Pobrane/Life for Ubuntu/Life/boardGenerator.h">
 			<Option target="Life"/>
 		</Unit>
+		<Unit filename="/home/orion/Pobrane/Life for Ubuntu/Life/errorsComunicats.h">
+			<Option target="Life"/>
+		</Unit>
 		<Unit filename="/home/orion/Pobrane/Life for Ubuntu/Life/fileOperator.c">
 			<Option target="Life"/>
 		</Unit>

@@ -1,4 +1,5 @@
 #include "gameOperator.h"
+#include "errorsComunicats.h"
 #include "pngOperator.h"
 #include "boardGenerator.h"
 #include "fileOperator.h"
@@ -21,23 +22,23 @@ int gameSimulation(gameBoard_t * gameBoard, gameSettings_t settings, int generat
     char fileName[100];
     findFileName(saveName,0,fileName);
     printFile(fileName, gameBoard,settings.cellSize);
-    for (int l =0;l < generationsCount; l++) {
+    for(int l =0;l < generationsCount; l++) {
         int errorCommand;
         // malloc space for cells in array
         short ** newFields;
         newFields = malloc(sizeof(newFields) * boardSize);
         if(newFields == NULL)
-            return -41; // Error: memory exhaustion
-        for (int i = 0; i < boardSize; i++) {
+            return MEMORY_EXHAUSTION;
+        for(int i = 0; i < boardSize; i++) {
             newFields[i] = malloc(sizeof(newFields[i]) * boardSize);
             if(newFields[i] == NULL)
-                return -41; // Error: memory exhaustion
+                return MEMORY_EXHAUSTION;
         }
 
         setBorders(boardSize, newFields, settings.edgeSettings);
         //Finding new generation
-        for (int i = 1; i < boardSize - 1; i++)      // i=1 and, i < boardSize-1, cause cells are stored from index 1 to
-            for (int j = 1; j < boardSize - 1; j++){ // index equal boardSize-1, other space is designed for border
+        for(int i = 1; i < boardSize - 1; i++)      // i=1 and, i < boardSize-1, cause cells are stored from index 1 to
+            for(int j = 1; j < boardSize - 1; j++){ // index equal boardSize-1, other space is designed for border
                 int aliveNeighbours;
                 if (settings.neighborhoodSettings == 1)
                     aliveNeighbours = checkCellMooreNeighborhood(gameBoard->fields, i, j);
@@ -48,7 +49,7 @@ int gameSimulation(gameBoard_t * gameBoard, gameSettings_t settings, int generat
         freeFields(gameBoard); //Free old generation array
         gameBoard->fields=newFields; //puts new generation into struct gameBoard
         findFileName(saveName,l+1,fileName);
-        errorCommand=printFile(fileName, gameBoard,settings.cellSize); // generate visualization of generation in PNG format
+        errorCommand=printFile(fileName, gameBoard,settings.cellSize); //generate visualization of generation in PNG
         if(errorCommand)
             return errorCommand;
     }
@@ -84,14 +85,8 @@ int checkCellVonNeumannNeighborhood(short ** fields, int x, int y){
 }
 void findFileName(char* prefix, int counter, char  source[100]){
     char fileName[100] = "./";
-    char generation[4] ="000";
-    int i=0;
-    while(counter>0)
-    {
-        generation[2-i]=(counter%10)+48;
-        counter=counter/10;
-        i++;
-    }
+    char generation[15];
+    sprintf(generation ,"%d", counter);
     strcat(fileName,prefix);
     strcat(fileName,"/Genration_");
     strcat(fileName,generation);
@@ -99,7 +94,7 @@ void findFileName(char* prefix, int counter, char  source[100]){
     strcpy(source,fileName);
 }
 void freeFields(gameBoard_t * gameBoard){
-    for (int i = 0; i < gameBoard->boardSize; i++) {
+    for(int i = 0; i < gameBoard->boardSize; i++) {
         if(gameBoard->fields[i] != NULL)
             free(gameBoard->fields[i]);
     }

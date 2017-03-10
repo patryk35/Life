@@ -1,4 +1,5 @@
 #include "gameSettings.h"
+#include "errorsComunicats.h"
 #include "gameOperator.h"
 #include <getopt.h>
 #include <stdio.h>
@@ -36,9 +37,8 @@ int main(int argc, char ** argv) {
                 break;
             case 'g':
                 generationsCount = atoi(optarg);
-                if(generationsCount<1 || generationsCount > 999)
-                {
-                    printf("Value \"generationsCount\" must be positive and less than 1000");
+                if(generationsCount<1) {
+                    printf("Value \"generationsCount\" must be positive");
                     return 1;
                 }
                 break;
@@ -47,7 +47,7 @@ int main(int argc, char ** argv) {
                 return EXIT_FAILURE;
         }
     }
-    if( optind < argc ) {
+    if(optind<argc) {
         fprintf( stderr, "\nWrong parameters!\n" );
         for( ; optind < argc; optind++ )
             fprintf( stderr, "\t\"%s\"\n", argv[optind] );
@@ -72,23 +72,38 @@ int main(int argc, char ** argv) {
 
     errorCommand = loadGameSettings(settingsFile,&settings);
     if(errorCommand) {
-        if(errorCommand == -1)
-            fprintf(stderr,"Error: in function \"loadGameSettings\" - Configuration file \"%s\" can't be opened.  \n", settingsFile);
-        else if(errorCommand == -2)
-            fprintf(stderr,"Error: in function \"loadGameSettings\" - Failure in configuration file \"%s\". Value \"countOfAdjacentCells\" must be 0 or 1. \n", settingsFile);
-        else if(errorCommand == -3)
-            fprintf(stderr,"Error: in function \"loadGameSettings\" - Failure in configuration file \"%s\". Value \"defaultBoardSize\" must be positive value.\n", settingsFile);
-        else if(errorCommand == -4)
-            fprintf(stderr,"Error: in function \"loadGameSettings\" - Failure in configuration file \"%s\". Value \"edgeSettings\" must be 0 or 1 or 2.\n", settingsFile);
-        else if(errorCommand == -5)
-            fprintf(stderr,"Error: in function \"loadGameSettings\" - Failure in configuration file \"%s\". Value \"defaultGenerationCount\" must be positive and less than 1000\n", settingsFile);
-        else if(errorCommand == -6)
-            fprintf(stderr,"Error: in function \"loadGameSettings\" - Failure in configuration file \"%s\". Value \"cellSize\" must be positive\n", settingsFile);
-        else if(errorCommand == -7)
-            fprintf(stderr,"Error: in function \"loadGameSettings\" - Not enough arguments in \"configuration file\" (\"%s\") to start program\n", settingsFile);
-        else
-            fprintf(stderr,"Unknown Error: in function \"loadGameSettings\" \n");
-        return errorCommand;
+        switch(errorCommand){
+            case CONFIGURATION_FILE_CAN_NOT_OPEN:
+                fprintf(stderr,"Error: in function \"loadGameSettings\" - Configuration file \"%s\" can't be opened.\n",
+                        settingsFile);
+                break;
+            case INVALID_VALUE_NEIGHBORHOOD_SETTINGS:
+                fprintf(stderr,"Error: in function \"loadGameSettings\" - Failure in configuration file \"%s\"."
+                         "Value \"neighborhoodSettings\" must be 0 or 1. \n", settingsFile);
+                break;
+            case INVALID_VALUE_DEFAULT_BOARD_SIZE:
+                fprintf(stderr,"Error: in function \"loadGameSettings\" - Failure in configuration file \"%s\". "
+                        "Value \"defaultBoardSize\" must be positive value.\n", settingsFile);
+                break;
+            case INVALID_VALUE_EDGE_SETTINGS:
+                fprintf(stderr,"Error: in function \"loadGameSettings\" - Failure in configuration file \"%s\"."
+                        " Value \"edgeSettings\" must be 0 or 1 or 2.\n", settingsFile);
+                break;
+            case INVALID_VALUE_DEFAULT_GENERATION_COUNT:
+                fprintf(stderr,"Error: in function \"loadGameSettings\" - Failure in configuration file \"%s\". "
+                        "Value \"defaultGenerationCount\" must be positive\n", settingsFile);
+                break;
+            case INVALID_VALUE_CELL_SIZE:
+                fprintf(stderr,"Error: in function \"loadGameSettings\" - Failure in configuration file \"%s\". "
+                        "Value \"cellSize\" must be positive\n", settingsFile);
+                break;
+            case FILE_INVALID_COUNT_OF_ARGUMENTS:
+                fprintf(stderr,"Error: in function \"loadGameSettings\" - Not enough arguments in "
+                        "\"configuration file\" (\"%s\") to start program\n", settingsFile);
+            default:
+                fprintf(stderr,"Unknown Error: in function \"loadGameSettings\" \n");
+                return errorCommand;
+        }
     }
 
     if(generationsCount==0)
@@ -96,43 +111,61 @@ int main(int argc, char ** argv) {
 
     errorCommand = createBoard(&gameBoard, settings, saveName, readFileName);
     if(errorCommand) {
-        if(errorCommand == -21)
-            fprintf(stderr,"Error: in function \"readFile\" - can not open file \"%s\" for reading \n", readFileName);
-        else if(errorCommand == -22)
-            fprintf(stderr,"Error: in function \"readFile\" - can not read size value in file \"%s\" \n", readFileName);
-        else if(errorCommand == -23)
-            fprintf(stderr,"Error: in function \"readFile\" - memory exhaustion \n");
-        else if(errorCommand == -24)
-            fprintf(stderr,"Error: in function \"readFile\" - can not read cells value in file \"%s\" \n", readFileName);
-        else if(errorCommand == -12)
-            fprintf(stderr,"Error: in function \"boardGenerator\" - memory exhaustion \n");
-        else
-            fprintf(stderr,"Unknown Error: in function \"startGame\" \n");
-        return errorCommand;
+        switch(errorCommand) {
+            case FILE_CAN_NOT_OPEN_TO_READ:
+                fprintf(stderr,"Error: in function \"readFile\" - can not open file \"%s\" for reading \n",
+                        readFileName);
+                break;
+            case FILE_SIZE_VALUE:
+                fprintf(stderr,"Error: in function \"readFile\" - can not read size value in file \"%s\" \n",
+                        readFileName);
+                break;
+            case MEMORY_EXHAUSTION:
+                fprintf(stderr,"Error: memory exhaustion \n");
+                break;
+            case FILE_CELLS_VALUES:
+                fprintf(stderr,"Error: in function \"readFile\" - can not read cells value in file \"%s\" \n",
+                        readFileName);
+                break;
+            default:
+                fprintf(stderr,"Unknown Error: in function \"startGame\" \n");
+                return errorCommand;
+        }
     }
     errorCommand =  gameSimulation(&gameBoard, settings, generationsCount, saveName);
     if(errorCommand) {
-        if(errorCommand == -31)
-            fprintf(stderr,"Error: in function \"writFile\" - can not open file  \"%s\" for writing \n", saveName);
-        else if(errorCommand == -41)
-            fprintf(stderr,"Error: in function \"gameSimulation\" - memory exhaustion");
-        else if(errorCommand == -61)
-            fprintf(stderr,"Error: in function \"printFile\" - can not open file for writting");
-        else if(errorCommand == -62)
-            fprintf(stderr,"Error: in function \"printFile\" - png_create_write_struct failed");
-        else if(errorCommand == -63)
-            fprintf(stderr,"Error: in function \"printFile\" - png_create_info_struct failed");
-        else if(errorCommand == -64)
-            fprintf(stderr,"Error: in function \"printFile\" - error during init_io");
-        else if(errorCommand == -65)
-            fprintf(stderr,"Error: in function \"printFile\" - error during writing header");
-        else if(errorCommand == -66)
-            fprintf(stderr,"Error: in function \"printFile\" - error during writing bytes");
-        else if(errorCommand == -67)
-            fprintf(stderr,"Error: in function \"printFile\" - error during end of write");
-        else
-            fprintf(stderr,"Unknown Error: in function \"gameSimulation\" \n");
-        return errorCommand;
+        switch(errorCommand) {
+            case FILE_CAN_NOT_OPEN_TO_WRITE:
+                fprintf(stderr,"Error: in function \"writFile\" - can not open file  \"%s\" for writing \n", saveName);
+                break;
+            case MEMORY_EXHAUSTION:
+                fprintf(stderr,"Error: in function \"gameSimulation\" - memory exhaustion");
+                break;
+            case PNG_CAN_NOT_OPEN:
+                fprintf(stderr,"Error: in function \"printFile\" - can not open file for writting");
+                break;
+            case PNG_CREATE_WRITE_STRUCT_FAILED:
+                fprintf(stderr,"Error: in function \"printFile\" - png_create_write_struct failed");
+                break;
+            case PNG_CREATE_INFO_STRUCT_FAILED:
+                fprintf(stderr,"Error: in function \"printFile\" - png_create_info_struct failed");
+                break;
+            case PNG_INIT_TO_ERROR:
+                fprintf(stderr,"Error: in function \"printFile\" - error during init_io");
+                break;
+            case PNG_WRITTING_HEADRE_WRITE:
+                fprintf(stderr,"Error: in function \"printFile\" - error during writing header");
+                break;
+            case PNG_WRITING_BYTES:
+                fprintf(stderr,"Error: in function \"printFile\" - error during writing bytes");
+                break;
+            case PNG_END_OF_WRITE_ERROR:
+                fprintf(stderr,"Error: in function \"printFile\" - error during end of write");
+                break;
+            default:
+                fprintf(stderr,"Unknown Error: in function \"startGame\" \n");
+                return errorCommand;
+        }
     }
     freeFields(&gameBoard);
     return EXIT_SUCCESS;

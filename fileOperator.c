@@ -8,7 +8,7 @@
 int readFile(char * fileName, gameBoard_t * gameBoard, int edgeSettings){
     FILE * file = fopen(fileName,"r");
     if(file == NULL)
-        return FILE_CAN_NOT_OPEN_TO_WRITE;
+        return FILE_CAN_NOT_OPEN_TO_READ;
     int tmp;
     if(fscanf(file,"%d",&tmp)!=0)
         gameBoard->boardSize=tmp+2; // +2, cause cells are stored from index 1 to index equal boardSize-1,
@@ -50,7 +50,7 @@ int writeFile(char * saveName, gameBoard_t * gameBoard){
     //writing to file
     file = fopen(fileName,"w");
     if(file == NULL)
-        return FILE_CAN_NOT_OPEN_TO_READ;
+        return FILE_CAN_NOT_OPEN_TO_WRITE;
     fprintf(file,"%d\n", gameBoard->boardSize-2);
     for(int i=1;i<gameBoard->boardSize-1;i++){
         for(int j = 1; j < gameBoard->boardSize-1; ++j)

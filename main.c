@@ -102,8 +102,8 @@ int main(int argc, char ** argv) {
                         "\"configuration file\" (\"%s\") to start program\n", settingsFile);
             default:
                 fprintf(stderr,"Unknown Error: in function \"loadGameSettings\" \n");
-                return errorCommand;
         }
+        return errorCommand;
     }
 
     if(generationsCount==0)
@@ -128,9 +128,9 @@ int main(int argc, char ** argv) {
                         readFileName);
                 break;
             default:
-                fprintf(stderr,"Unknown Error: in function \"startGame\" \n");
-                return errorCommand;
+                fprintf(stderr,"Unknown Error: in function \"createBoard\" \n");
         }
+        return errorCommand;
     }
     errorCommand =  gameSimulation(&gameBoard, settings, generationsCount, saveName);
     if(errorCommand) {
@@ -164,8 +164,8 @@ int main(int argc, char ** argv) {
                 break;
             default:
                 fprintf(stderr,"Unknown Error: in function \"startGame\" \n");
-                return errorCommand;
         }
+        return errorCommand;
     }
     freeFields(&gameBoard);
     return EXIT_SUCCESS;

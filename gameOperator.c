@@ -11,10 +11,8 @@ int createBoard(gameBoard_t * gameBoard, gameSettings_t settings, char * saveNam
     newDirectory(saveName); //creating new file to save generated files
     if(settings.isBoardLoaded == 1) // if isBoardLoaded =0 generate board, if isBoardLoaded =0 load board
         return readFile(readFileName,gameBoard,settings.edgeSettings);
-    else if(settings.isBoardLoaded == 0){
+    else if(settings.isBoardLoaded == 0)
         return boardGenerator(gameBoard, settings.edgeSettings,settings.defaultBoardSize);
-    }else
-        return -33;
 }
 
 int gameSimulation(gameBoard_t * gameBoard, gameSettings_t settings, int generationsCount, char * saveName){
@@ -44,6 +42,7 @@ int gameSimulation(gameBoard_t * gameBoard, gameSettings_t settings, int generat
                     aliveNeighbours = checkCellMooreNeighborhood(gameBoard->fields, i, j);
                 else
                     aliveNeighbours = checkCellVonNeumannNeighborhood(gameBoard->fields, i, j);
+
                 newFields[i][j]=checkAlive(aliveNeighbours,gameBoard->fields[i][j]);
             }
         freeFields(gameBoard); //Free old generation array
@@ -56,16 +55,10 @@ int gameSimulation(gameBoard_t * gameBoard, gameSettings_t settings, int generat
     return writeFile(saveName, gameBoard); //write file with last generation
 }
 int checkAlive(int aliveNeighbours, int isAlive){
-    if(isAlive == 1)
-        if(aliveNeighbours == 2 || aliveNeighbours == 3)
-            return 1;
-        else
-            return 0;
-    else if(isAlive == 0)
-        if(aliveNeighbours == 3)
-            return 1;
-        else
-            return isAlive;
+    if(isAlive == 1 && aliveNeighbours != 2 && aliveNeighbours != 3)
+        return 0;
+    else if(isAlive == 0 && aliveNeighbours == 3)
+        return 1;
     else
         return isAlive;
 }
@@ -74,13 +67,12 @@ int checkCellMooreNeighborhood(short ** fields, int x, int y){
     for(int i =-1; i <= 1; i++)
         for(int j =-1; j <= 1; j++)
             if(!(i ==0 && j ==0)) //without the cell in the middle(based cell)
-                if(fields[x+i][y+j])
-                    aliveNeighbours++;
+                aliveNeighbours += fields[x+i][y+j];
     return aliveNeighbours;
 
 }
 int checkCellVonNeumannNeighborhood(short ** fields, int x, int y){
-    short aliveNeighbours = fields[x+1][y] + fields[x-1][y] + fields[x][y+1] + fields[x][y+1];
+    short aliveNeighbours = fields[x+1][y] + fields[x-1][y] + fields[x][y+1] + fields[x][y-1];
     return aliveNeighbours;
 }
 void findFileName(char* prefix, int counter, char  source[100]){

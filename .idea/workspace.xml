@@ -11,12 +11,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57c0a3a2-61c2-412e-aef8-feee8173b790" name="Default" comment="Added net between pixels, new error operate and removed limit of 999 pictures&#10;&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Life" afterPath="$PROJECT_DIR$/cmake-build-debug/Life" />
+    <list default="true" id="57c0a3a2-61c2-412e-aef8-feee8173b790" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fileOperator.c" afterPath="$PROJECT_DIR$/fileOperator.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gameOperator.c" afterPath="$PROJECT_DIR$/gameOperator.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.c" afterPath="$PROJECT_DIR$/main.c" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,7 +40,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gameOperator.c" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gameOperator.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gameOperator.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="193">
@@ -52,6 +48,16 @@
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="life.conf" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cmake-build-debug/life.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,9 +110,10 @@
         <option value="$PROJECT_DIR$/gameOperator.h" />
         <option value="$PROJECT_DIR$/gameSettings.c" />
         <option value="$PROJECT_DIR$/main.c" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/life.conf" />
         <option value="$PROJECT_DIR$/boardGenerator.c" />
         <option value="$PROJECT_DIR$/gameOperator.c" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/life.conf" />
+        <option value="$PROJECT_DIR$/JIMP Milewski Zarczuk/JIMP2 Milewski Zarczuk Projekt 1.tex" />
       </list>
     </option>
   </component>
@@ -379,7 +386,7 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-w Glider -l ./Samples/GliderSample.life" WORKING_DIR="" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Life" RUN_TARGET_NAME="Life" EXPLICIT_BUILD_TARGET_NAME="all">
+    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-w test5 -l ./Samples/SquaresSample.life -g 10 " WORKING_DIR="" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Life" RUN_TARGET_NAME="Life" EXPLICIT_BUILD_TARGET_NAME="all">
       <envs />
       <method />
     </configuration>
@@ -425,7 +432,7 @@
       <workItem from="1488841056315" duration="136000" />
       <workItem from="1489152813406" duration="2000" />
       <workItem from="1489152848196" duration="17955000" />
-      <workItem from="1489232050566" duration="8424000" />
+      <workItem from="1489232050566" duration="10516000" />
     </task>
     <task id="LOCAL-00001" summary="v 1.1.1&#10;">
       <created>1488556724239</created>
@@ -525,11 +532,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489177544704</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added net between pixels, new error operate and removed limit of 999 pictures&#10;&#10;">
+      <created>1489243523726</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1489243523726</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115769000" />
+    <option name="totallyTimeSpent" value="117861000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="24" width="1555" height="772" extended-state="6" />
@@ -611,7 +625,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/newGlider/Genration_000.png" />
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/newGlider2/Genration_050.png" />
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/newGlider2/newGlider2.life" />
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/newGlider2/Genration_001.png" />
@@ -795,14 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/life.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="112" lean-forward="true" selection-start-line="3" selection-start-column="112" selection-end-line="3" selection-end-column="112" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gameSettings.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -859,6 +864,14 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/JIMP Milewski Zarczuk/JIMP2 Milewski Zarczuk Projekt 1.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gameOperator.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
@@ -866,6 +879,14 @@
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/life.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
